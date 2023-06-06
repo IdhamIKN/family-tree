@@ -1,0 +1,114 @@
+/*!
+ * Credit
+ * Project URL: https://codepen.io/P233/pen/Kzbsi;
+ * Project title: CSS Horizontal Family Tree
+ * Project Author: Peiwen Lu (https://codepen.io/P233);
+ */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+#wrapper {
+    position: relative;
+}
+
+.branch {
+    position: relative;
+    margin-left: 230px;
+}
+/*.branch .lv3 {
+    margin-left: 150px;
+}
+.branch .lv4 {
+    margin-left: 150px;
+}
+#wrapper .branch .lv2 span.label {
+    width: 30px;
+}*/
+.branch:before {
+    content: "";
+    width: 30px;
+    border-top: 2px solid #ccc;
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    margin-top: 1px;
+}
+
+.entry {
+    position: relative;
+    min-height: 30px;
+}
+.entry:before {
+    content: "";
+    height: 100%;
+    border-left: 2px solid #ccc;
+    position: absolute;
+    left: -30px;
+}
+.entry:after {
+    content: "";
+    width: 30px;
+    border-top: 2px solid #ccc;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: 1px;
+}
+.entry:first-child:before {
+    width: 10px;
+    height: 50%;
+    top: 50%;
+    margin-top: 2px;
+    border-radius: 10px 0 0 0;
+}
+.entry:first-child:after {
+    height: 10px;
+    border-radius: 10px 0 0 0;
+}
+.entry:last-child:before {
+    width: 10px;
+    height: 50%;
+    border-radius: 0 0 0 10px;
+}
+.entry:last-child:after {
+    height: 10px;
+    border-top: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 0 0 0 10px;
+    margin-top: -9px;
+}
+.entry.sole:before {
+    display: none;
+}
+.entry.sole:after {
+    width: 30px;
+    height: 0;
+    margin-top: 1px;
+    border-radius: 0;
+}
+
+#wrapper span.label {
+    display: block;
+    font-size: 12px;
+    /*min-width: 150px;*/
+    width: 170px;
+    overflow-x: hidden;
+    padding: 4px 8px;
+    line-height: 14px;
+    text-align: center;
+    border: 2px solid #ccc;
+    /*border: 1px solid #2e6ba7;*/
+    border-radius: 6px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
