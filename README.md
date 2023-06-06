@@ -1,4 +1,4 @@
-![Laravel](https://laravel.com/assets/img/components/logo-laravel.svg)
+<center>![Laravel](https://laravel.com/assets/img/components/logo-laravel.svg)</center>
 
 <h1 align="center">Aplikasi Silsilah Keluarga</h1>
 
