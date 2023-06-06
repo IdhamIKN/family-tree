@@ -136,8 +136,6 @@ $ vendor/bin/phpunit
 5. Alamat
 
 
-![Automated Testing](public/images/07-automated-testing.jpg "Automated Testing")
-
 <h2 id="[dukungan](https://saweria.co/idhamIKN)">💌 [Support Me]</h2>
 
 <p>
