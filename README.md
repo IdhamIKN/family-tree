@@ -1,7 +1,3 @@
-<p align="center">
-  ![Laravel](https://laravel.com/assets/img/components/logo-laravel.svg)
-</p>
-
 <h1 align="center">Aplikasi Silsilah Keluarga</h1>
 
 <p align="center">
